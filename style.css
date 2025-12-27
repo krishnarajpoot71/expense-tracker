@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dark {
+    background: #121212;
+}
+
+.container {
+    background: #fff;
+    width: 360px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dark .container {
+    background: #1e1e1e;
+    color: white;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.balance h1 {
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.summary div {
+    width: 45%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.income {
+    background: #d4edda;
+}
+
+.expense {
+    background: #f8d7da;
+}
+
+form input, #search {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    border-right: 5px solid;
+}
+
+li.plus { border-color: green; }
+li.minus { border-color: red; }
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#themeToggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+}

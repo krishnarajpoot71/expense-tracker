@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<button id="themeToggle">🌙</button>
+
+<div class="container">
+    <h2>Expense Tracker</h2>
+
+    <div class="balance">
+        <h4>Your Balance</h4>
+        <h1 id="balance">₹0</h1>
+    </div>
+
+    <div class="summary">
+        <div class="income">
+            <h4>Income</h4>
+            <p id="income">₹0</p>
+        </div>
+        <div class="expense">
+            <h4>Expense</h4>
+            <p id="expense">₹0</p>
+        </div>
+    </div>
+
+    <input type="text" id="search" placeholder="Search transactions">
+
+    <h3>Add Transaction</h3>
+    <form id="form">
+        <input type="text" id="text" placeholder="Description" required>
+        <input type="number" id="amount" placeholder="+income / -expense" required>
+        <button>Add Transaction</button>
+    </form>
+
+    <h3>History</h3>
+    <ul id="list"></ul>
+
+    <canvas id="expenseChart"></canvas>
+
+    <button onclick="exportCSV()">Export CSV</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
